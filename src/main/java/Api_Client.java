@@ -2,14 +2,13 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Base64;
+import java.util.Iterator;
 
 public class Api_Client {
     final static String DIFFBOT_API_KEY = "0af72f25c0487d4ed09ccf06544397ca";
@@ -17,24 +16,62 @@ public class Api_Client {
     final static String SYNONYM_API_KEY = "777f01ece8859262a3ffe3413206df51";
 
     public static void main(String[] args) throws Exception {
-        String endpoint = "https://newsapi.org/v2/top-headlines?sources=bbc-news&" + "apiKey=a31a93a9948a4b93a326671db56b4785";
+        String sources = "abc-news,bbc-sport,cbc-news";
+        String keyword = "dengue";
+        String type = "top-headlines"; // or --> everything
+        String pageSize = "10";
+        String category = "sports";
+        String endpoint = "https://newsapi.org/v2/" + type + "?country=us&category=" + category + "&" + "apiKey=a31a93a9948a4b93a326671db56b4785";
 
-        httpClient(endpoint, NEWS_API_KEY);
+        ArrayList urls = getJsonContent(httpClient(endpoint, NEWS_API_KEY));
+        getHTMLContent(urls);
         // System.out.println("get html: " + getHTMLContent("http://www.bbc.co.uk/news/world-asia-42699600"));
-        synonym("swim");
+        //synonym("swim");
 
     }
 
-    public static StringBuilder getHTMLContent(String url) throws IOException {
-        String encodedUrl = URLEncoder.encode(url, "UTF-8");
-        StringBuilder builder = httpClient("https://api.diffbot.com/v3/analyze?token=" + DIFFBOT_API_KEY + "" +
-                "&url=" + encodedUrl, null);
+
+    public static String getHTMLContent(ArrayList newsUrl) throws IOException {
+
+        JsonObject responseObj = null;
+        String encodedUrl;
+        StringBuilder builder;
+        Iterator url = newsUrl.iterator();
+        while (url.hasNext()) {
+            // System.out.println("Url from array " + url.next());
+            encodedUrl = URLEncoder.encode((String) url.next(), "UTF-8");
+            builder = httpClient("https://api.diffbot.com/v3/analyze?token=" + DIFFBOT_API_KEY + "" +
+                    "&url=" + encodedUrl, null);
+            JsonParser jsonParser = new JsonParser();
+            responseObj = (JsonObject) jsonParser.parse(builder.toString());
+
+            String description = responseObj.get("objects").getAsJsonArray().get(0).getAsJsonObject().get("text").getAsString();
+            System.out.println("description : " + description);
+        }
+        return responseObj.get("objects").
+                getAsJsonArray().get(0).getAsJsonObject().get("text").getAsString();
+
+
+    }
+
+    private static ArrayList<String> getJsonContent(StringBuilder stringBuilder) throws IOException {
         JsonParser jsonParser = new JsonParser();
-        JsonObject responseObj = (JsonObject) jsonParser.parse(builder.toString());
-        return new StringBuilder(responseObj.get("objects").
-                getAsJsonArray().get(0).getAsJsonObject().get("text").getAsString());
-    }
+        JsonObject responseObj = (JsonObject) jsonParser.parse(stringBuilder.toString());
+        BufferedWriter fileWriter = new BufferedWriter(new FileWriter("News"));
+        ArrayList<String> urlList = new ArrayList<>();
+        for (int i = 0; i < responseObj.get("articles").getAsJsonArray().size(); i++) {
 
+            String newsURL = responseObj.get("articles").getAsJsonArray().get(i).getAsJsonObject().get("url").getAsString();
+            System.out.println("Json : " + newsURL);
+            fileWriter.write(newsURL);
+            fileWriter.write(" - ");
+            fileWriter.newLine();
+            urlList.add(newsURL);
+        }
+        fileWriter.close();
+
+        return urlList;
+    }
 
     private static StringBuilder httpClient(String endpoint, String authenticationKey) throws IOException {
         URL url = new URL(endpoint);
@@ -54,8 +91,9 @@ public class Api_Client {
 
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Synonym Not found");
+            System.out.println("Not found");
         }
+
         return response;
     }
 
@@ -75,9 +113,7 @@ public class Api_Client {
                 System.out.println("synonym " + i + " :" + synArray.get(i));
 
             }
-            {
 
-            }
         } catch (NullPointerException e) {
         }
     }
