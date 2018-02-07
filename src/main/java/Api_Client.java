@@ -5,39 +5,53 @@ import com.google.gson.JsonParser;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Base64;
-import java.util.Iterator;
+
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 
 public class Api_Client {
     final static String SYNONYM_API_KEY = "777f01ece8859262a3ffe3413206df51";
-    final static String DIFFBOT_API_KEY = "0af72f25c0487d4ed09ccf06544397ca";
 
+    public static ArrayList<StringBuilder> getHTMLContent(ArrayList newsUrl) throws IOException, InterruptedException {
+        ArrayList<StringBuilder> descriptionList = new ArrayList();
+        Document document;
+        for (int i = 0; i < newsUrl.size(); i++) {
 
+            //create jsoup connection with user agent
+            Connection.Response response = Jsoup.connect((String) newsUrl.get(i))
+                    .ignoreContentType(true)
+                    .userAgent("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0")
+                    .referrer("http://www.google.com")
+                    .timeout(12000)
+                    .followRedirects(true)
+                    .execute();
 
-    public static ArrayList<String> getHTMLContent(ArrayList newsUrl) throws IOException {
-        ArrayList<String> descriptionList = new ArrayList<>();
-        JsonObject responseObj = null;
-        String encodedUrl;
-        StringBuilder builder;
-        Iterator url = newsUrl.iterator();
-        while (url.hasNext()) {
-            // System.out.println("Url from array " + url.next());
-            encodedUrl = URLEncoder.encode((String) url.next(), "UTF-8");
-            builder = httpClient("https://api.diffbot.com/v3/analyze?token=" + DIFFBOT_API_KEY + "" +
-                    "&url=" + encodedUrl, null);
-            JsonParser jsonParser = new JsonParser();
-            responseObj = (JsonObject) jsonParser.parse(builder.toString());
-
-            String description = responseObj.get("objects").getAsJsonArray().get(0).getAsJsonObject().get("text").getAsString();
-            //add all descriptions relavant to that topic to an array list
-            descriptionList.add(description);
-
-
+            document = response.parse();
+            System.out.println("url - " + newsUrl.get(i));
+            String title = document.title();
+            Elements paragraphs = document.body().select("p");
+            StringBuilder content = new StringBuilder();
+            for (Element element : paragraphs) {
+                //removing advertisement tag
+                if (!element.text().equals("Advertisement") &&
+                        !element.text().contains("|") &&
+                        !element.text().contains(":") &&
+                        !(element.text().trim().split(" ").length == 1) &&
+                        !(element.text().trim().contains("Home Page"))) {
+                    content.append(element.text());
+                    content.append("\n");
+                }
+            }
+            descriptionList.add(content);
         }
-        return descriptionList;
 
+        return descriptionList;
 
     }
 

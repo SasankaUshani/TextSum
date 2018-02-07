@@ -3,9 +3,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author Mohamed Guendouz
- */
+
 public class TFIDFCalculator {
     /**
      * @param doc  list of strings
