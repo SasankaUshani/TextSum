@@ -1,3 +1,5 @@
+package Other;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -12,8 +14,10 @@ public class Sentence {
     List<String> uniqueWords = new ArrayList<>(); // unique words in description
     List<String> allSentences = new ArrayList<>();
     List<String> stopWords = null;
+    List<String> junkText = null;
 
     public void splitSentence(ArrayList descriptions) throws IOException, InterruptedException {
+        junkText = new JunkWords().getJunkWords();
 
         int documentCount = 0;
         for (int i = 0; i < descriptions.size(); i++) {
@@ -22,14 +26,14 @@ public class Sentence {
             if (description != null) {
                 Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)",
                         Pattern.MULTILINE | Pattern.COMMENTS);
-              // --> use this other way
-                Pattern re2 = Pattern.compile("Follow Grant on Twitter and Facebook.");
+
                 Matcher reMatcher = re.matcher(description);
-              //  reMatcher = re2.matcher(description);
+                //  reMatcher = re2.matcher(description);
                 stopWords = new StopWords().getStopWords();
                 while (reMatcher.find()) {
-                    allSentences.add(reMatcher.group());
-                    System.out.println("Remathcer : " + reMatcher.group().toString());
+                            allSentences.add(reMatcher.group());
+                            System.out.println("Remathcer : " + reMatcher.group());
+
                     String[] tokenizedTerms = reMatcher.group().
                             replaceAll("[\\W&&[^\\s]]", "").split("\\W+");//to get individual terms
 
@@ -42,22 +46,30 @@ public class Sentence {
                         }
                     }
                     allWordsInDescription.add(tokenizedTerms);
+
+
                 }
 
-            }else{
+            } else {
                 System.out.println("Description is null");
             }
+
             documentCount++;
+            System.out.println();
             System.out.println("Senetence size : " + allSentences.size() + " and document count is : " + documentCount);
+            System.out.println();
+
         }
     }
 
     public List<String[]> getAllWordsInDescription() {
         return this.allWordsInDescription;
     }
+
     public List<String> getUniqueWords() {
         return this.uniqueWords;
     }
+
     public List<String> getAllSentences() {
         return this.allSentences;
     }

@@ -1,3 +1,4 @@
+package Other;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 public class JunkWords {
 
     public ArrayList<String> getJunkWords() throws IOException, InterruptedException {
-        Path file = Paths.get("/Users/sasankakudagoda/Desktop/IIT/TextSum/Project/src/main/java", "JunkText.txt");
+        Path file = Paths.get("/Users/sasankakudagoda/Desktop/IIT/TextSum/Project/src/main/java", "TextFiles/JunkText.txt");
         return (ArrayList<String>) Files.readAllLines(file, StandardCharsets.UTF_8);
     }
 }
