@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Other.Api_Client;
-import Other.Sentence;
+import Other.SentenceExtractor;
+import Other.SentenceScoreCalculator;
 import Other.TFIDFCalculator;
 
 
@@ -65,14 +66,17 @@ public class MainActivity {
 
 
 
-        Sentence sentence = new Sentence();
-        sentence.splitSentence(descriptions);
-        List list = sentence.getUniqueWords();
+        SentenceExtractor sentenceExtractor = new SentenceExtractor();
+        sentenceExtractor.splitSentence(descriptions);
+        List<String[]> allSentences = sentenceExtractor.getAllSentences();
 
 
         TFIDFCalculator tfidfCalculator = new TFIDFCalculator();
-        tfidfCalculator.calculateTF_IDF_valueOfAllDocuments(sentence.getAllWordsInDescription());
-        tfidfCalculator.getCosineSimilarity();
+        tfidfCalculator.calculateTF_IDF_valueOfAllDocuments(allSentences);
+//        tfidfCalculator.getCosineSimilarity();
+
+        SentenceScoreCalculator sentenceScoreCalculator = new SentenceScoreCalculator(descriptions);
+        sentenceScoreCalculator.getScoredSenetences();
 
     }
 }

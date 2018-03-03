@@ -16,7 +16,7 @@ public class CosineSimilarity {
      * @param docVector2 : document vector 2 (b)
      * @return
      */
-    public double cosineSimilarity(double[] docVector1, double[] docVector2) {
+    public double cosineSimilarity(Double[] docVector1, Double[] docVector2) {
         double dotProduct = 0.0;
         double magnitude1 = 0.0;
         double magnitude2 = 0.0;
