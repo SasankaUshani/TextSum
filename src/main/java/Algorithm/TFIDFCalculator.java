@@ -1,4 +1,6 @@
-package Other;
+package Algorithm;
+
+import Preprocessor.StopWordsRemover;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -59,7 +61,7 @@ public class TFIDFCalculator {
         double idf;
         int count = 0;
 
-        stopWords = new StopWords().getStopWords();
+        stopWords = new StopWordsRemover().getStopWords();
         for (String[] description : descriptions) {
             Double[] tdidfValuesForDocument = new Double[descriptions.size()];
             for (String word : description) {

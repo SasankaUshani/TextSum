@@ -1,4 +1,4 @@
-package Other;
+package Preprocessor;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -7,10 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-public class StopWords {
+public class JunkWordsRemover {
 
-    public ArrayList<String> getStopWords() throws IOException, InterruptedException {
-        Path file = Paths.get("/Users/sasankakudagoda/Desktop/IIT/TextSum/Project/src/main/java", "TextFiles/Stopword.txt");
+    public ArrayList<String> getJunkWords() throws IOException, InterruptedException {
+        Path file = Paths.get("/Users/sasankakudagoda/Desktop/IIT/TextSum/Project/src/main/java", "TextFiles/JunkText.txt");
         return (ArrayList<String>) Files.readAllLines(file, StandardCharsets.UTF_8);
     }
 }

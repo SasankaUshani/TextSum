@@ -2,12 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Other;
+package Algorithm;
 
-/**
- * Cosine similarity calculator class
- * @author Mubin Shrestha
- */
+
 public class CosineSimilarity {
 
     /**

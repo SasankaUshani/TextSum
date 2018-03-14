@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Other.Api_Client;
-import Other.SentenceExtractor;
-import Other.SentenceScoreCalculator;
-import Other.TFIDFCalculator;
+import Algorithm.Api_Client;
+import Extractor.SentenceExtractor;
+import Algorithm.SentenceScoreCalculator;
+import Algorithm.TFIDFCalculator;
 
 
 public class MainActivity {

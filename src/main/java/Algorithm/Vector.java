@@ -1,4 +1,4 @@
-package Other;
+package Algorithm;
 
 public class Vector {
     public static double dotProduct(double [] v1, double [] v2){

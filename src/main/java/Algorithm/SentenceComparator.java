@@ -1,4 +1,4 @@
-package Other;
+package Algorithm;
 
 import Models.Sentence;
 

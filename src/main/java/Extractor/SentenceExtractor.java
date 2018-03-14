@@ -1,4 +1,7 @@
-package Other;
+package Extractor;
+
+import Preprocessor.JunkWordsRemover;
+import Preprocessor.StopWordsRemover;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,7 +21,7 @@ public class SentenceExtractor {
     List<String> junkText = null;
 
     public void splitSentence(ArrayList descriptions) throws IOException, InterruptedException {
-        junkText = new JunkWords().getJunkWords();
+        junkText = new JunkWordsRemover().getJunkWords();
 
         int documentCount = 0;
         for (int i = 0; i < descriptions.size(); i++) {
@@ -30,7 +33,7 @@ public class SentenceExtractor {
 
                 Matcher reMatcher = re.matcher(description);
                 //  reMatcher = re2.matcher(description);
-                stopWords = new StopWords().getStopWords();
+                stopWords = new StopWordsRemover().getStopWords();
                 while (reMatcher.find()) {
 
                     String[] tokenizedTerms = reMatcher.group().

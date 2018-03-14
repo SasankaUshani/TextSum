@@ -1,7 +1,8 @@
-package Other;
+package Algorithm;
 
 
 
+import Extractor.SentenceExtractor;
 import Models.Sentence;
 import Models.Word;
 
@@ -10,9 +11,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by ushan on 3/16/16.
- */
 public class SentenceScoreCalculator {
     private List<String[]> allWordsInDocuments = null;
     private List<String> uniqueWords = null;
@@ -42,23 +40,23 @@ public class SentenceScoreCalculator {
         return this.allSentences;
     }
 
-    public List<Sentence> getScoredSenetences(){
-        ArrayList<Sentence> sentences =  new ArrayList<Sentence>();
+    public List<Sentence> getScoredSenetences() {
+        ArrayList<Sentence> sentences = new ArrayList<Sentence>();
         for (int i = 0; i < allSentences.size(); i++) {
             sentences.add(new Sentence(allSentences.get(i), lexScore[i]));
         }
         SentenceComparator sentenceComparator = new SentenceComparator();
-        Collections.sort(sentences,sentenceComparator);
-        return  sentences;
+        Collections.sort(sentences, sentenceComparator);
+        return sentences;
     }
 
     private void init() throws IOException, InterruptedException {
-        for (int i = 0; i < documents.size();i++) {
+        for (int i = 0; i < documents.size(); i++) {
             sentenceExtractor.splitSentence(documents);
         }
         this.allWordsInDocuments = sentenceExtractor.getAllWordsInDescription();
         this.uniqueWords = sentenceExtractor.getUniqueWords();
-        this.allSentences = sentenceExtractor.allSentencesAsList;
+        this.allSentences = sentenceExtractor.getAllSentencesAsList();
         this.cosineMaxtrics = new double[allSentences.size()][allSentences.size()];
         this.degrees = new double[allSentences.size()];
         //calculateMaxOccarunce();
@@ -70,11 +68,11 @@ public class SentenceScoreCalculator {
     private void calculateLexRankScore() {
         for (int i = 0; i < allSentences.size(); i++) {
             for (int j = 0; j < allSentences.size(); j++) {
-                cosineMaxtrics[i][j] = compute_cosine(i,j);
-                if(cosineMaxtrics[i][j] > treshhold){
+                cosineMaxtrics[i][j] = compute_cosine(i, j);
+                if (cosineMaxtrics[i][j] > treshhold) {
                     cosineMaxtrics[i][j] = 1.0;
-                    degrees[i]+=1;
-                }else{
+                    degrees[i] += 1;
+                } else {
                     cosineMaxtrics[i][j] = 0.0;
                 }
             }
@@ -82,10 +80,10 @@ public class SentenceScoreCalculator {
 
         for (int i = 0; i < allSentences.size(); i++) {
             for (int j = 0; j < allSentences.size(); j++) {
-                if(degrees[i] == 0){
+                if (degrees[i] == 0) {
                     degrees[i] = 1.0;
                 }
-                cosineMaxtrics[i][j] = cosineMaxtrics[i][j]/degrees[i];
+                cosineMaxtrics[i][j] = cosineMaxtrics[i][j] / degrees[i];
             }
         }
         powerMethod(0.85);
@@ -108,18 +106,18 @@ public class SentenceScoreCalculator {
         String[] sentence2 = allWordsInDocuments.get(sentence2Index);
         double sentence2Val = calculateTotalTF_IDF_Square(sentence2);
 
-        if(sentence1Val > 0.0 && sentence2Val > 0.0){
-            return numerator/Math.sqrt(sentence1Val)*Math.sqrt(sentence2Val);
-        }else{
-            return  0.0;
+        if (sentence1Val > 0.0 && sentence2Val > 0.0) {
+            return numerator / Math.sqrt(sentence1Val) * Math.sqrt(sentence2Val);
+        } else {
+            return 0.0;
         }
     }
 
     private void powerMethod(double dampFactor) {
         double magDiff = 0.85;
-        double size = (double)allSentences.size();
+        double size = (double) allSentences.size();
         lexScore = new double[allSentences.size()];
-        double [] lexScoreNext = new double[(int) size];
+        double[] lexScoreNext = new double[(int) size];
         for (int i = 0; i < allSentences.size(); i++) {
             lexScore[i] = 1 / size;
         }
@@ -152,7 +150,7 @@ public class SentenceScoreCalculator {
         double idf_value = 0;
         for (Word word : words) {
             total_sentence = calculateSentenceOccarunce(word.getValue());
-            idf_value =1+ Math.log(4.0 / total_sentence);
+            idf_value = 1 + Math.log(4.0 / total_sentence);
             word.setIdf_value(idf_value);
         }
     }
@@ -172,8 +170,8 @@ public class SentenceScoreCalculator {
 
     private double calculateSentenceOccarunce(String word) {
         double count = 0;
-        for(StringBuilder document : documents){
-            if(document.toString().contains(word)){
+        for (StringBuilder document : documents) {
+            if (document.toString().contains(word)) {
                 count++;
             }
         }
@@ -188,22 +186,26 @@ public class SentenceScoreCalculator {
             for (int j = 0; j < sentence2.length; j++) {
                 if (sentence1[i].trim().equalsIgnoreCase(sentence2[j].trim())) {
                     commonWords.add(sentence1[i]);
+
                 }
             }
         }
         return commonWords;
     }
 
-    private double calculateTotalTF_IDF_Square(String[] sentence){
+    private double calculateTotalTF_IDF_Square(String[] sentence) {
         double sentenceVal = 0.00;
         for (String word : sentence) {
             Word wordObj = new Word();
             wordObj.setValue(word);
             if (words.contains(wordObj)) {
                 wordObj = words.get(words.indexOf(wordObj));
-                sentenceVal += Math.pow((wordObj.getTf_value()*wordObj.getIdf_value()),2);
+                sentenceVal += Math.pow((wordObj.getTf_value() * wordObj.getIdf_value()), 2);
             }
         }
-        return  sentenceVal;
+
+
+        System.out.println("val : " + sentenceVal);
+        return sentenceVal;
     }
 }

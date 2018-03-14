@@ -1,4 +1,4 @@
-package Other;
+package Algorithm;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
