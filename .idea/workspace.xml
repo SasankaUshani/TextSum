@@ -3,20 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="be60ee78-f8d9-41dc-81f8-0bc2bc39731c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/News" afterPath="$PROJECT_DIR$/News" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/SentenceComparator.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/SentenceComparator.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/Vector.java" afterPath="$PROJECT_DIR$/src/main/java/Algorithm/Vector.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/PostgreSQLJDBC.java" afterPath="$PROJECT_DIR$/src/main/java/Database/PostgreSQLJDBC.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Sentence.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Sentence.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Word.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Word.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Preprocessor/JunkWordsRemover.java" afterPath="$PROJECT_DIR$/src/main/java/Preprocessor/JunkWordsRemover.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java" afterPath="$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/Api_Client.class" afterPath="$PROJECT_DIR$/target/classes/Algorithm/Api_Client.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/CoreNlp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/SentenceComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/SentenceScoreCalculator.class" afterPath="$PROJECT_DIR$/target/classes/Algorithm/SentenceScoreCalculator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/MainActivity.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,12 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Vector.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="275">
+              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,27 +41,15 @@
       <file leaf-file-name="SentenceScoreCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+            <state relative-caret-position="130">
+              <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
-                <element signature="e#2074#2075#0" expanded="true" />
-                <element signature="e#2119#2120#0" expanded="true" />
-                <element signature="e#2159#2160#0" expanded="true" />
-                <element signature="e#2265#2275#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LexScoreCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/LexScoreCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="949">
-              <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
+                <element signature="e#2094#2095#0" expanded="true" />
+                <element signature="e#2139#2140#0" expanded="true" />
+                <element signature="e#2179#2180#0" expanded="true" />
+                <element signature="e#2285#2295#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +58,8 @@
       <file leaf-file-name="TFIDFCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="382">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,64 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CosineSimilarity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1798#1806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api_Client.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Api_Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
-              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="470">
+              <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoreNlp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CoreNlp.java">
+      <file leaf-file-name="SentenceExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JunkWordsRemover.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/JunkWordsRemover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StopWordsRemover.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceComparator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/SentenceComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="667">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,15 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>system.out.</find>
-      <find>system.out</find>
-      <find>COSINE</find>
-      <find>CosineSimilarity</find>
-      <find>allWordsInDocuments</find>
-      <find>calculateoc</find>
-      <find>documents</find>
-      <find>words</find>
-      <find>calculateTF</find>
       <find>words</find>
       <find>SentenceExtractor</find>
       <find>system</find>
@@ -182,9 +117,21 @@
       <find>powerMethod</find>
       <find>Vector</find>
       <find>SentenceComparator</find>
+      <find>score</find>
+      <find>calculateSenetenceScore</find>
+      <find>SenetenceScore</find>
+      <find>new sentence</find>
       <find>lexScore</find>
+      <find>lexscore</find>
       <find>compute</find>
+      <find>getSentenceValue</find>
+      <find>syst</find>
+      <find>public static void m</find>
+      <find>api</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -225,23 +172,24 @@
         <option value="$PROJECT_DIR$/src/main/java/Other/SentenceScoreCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/CentriodCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/CentroidCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/SentenceComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/Vector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Database/PostgreSQLJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/Models/Sentence.java" />
         <option value="$PROJECT_DIR$/src/main/java/Models/Word.java" />
         <option value="$PROJECT_DIR$/src/main/java/Preprocessor/JunkWordsRemover.java" />
         <option value="$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarityOrginal.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/OriginalSentenceScoreCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Comparator/SentenceComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/LexScoreCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -315,6 +263,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextSum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Comparator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TextSum" type="b2602c69:ProjectViewProjectNode" />
@@ -622,12 +578,12 @@
       <workItem from="1521620191622" duration="174000" />
       <workItem from="1521632642824" duration="807000" />
       <workItem from="1521637392286" duration="182000" />
-      <workItem from="1521778882129" duration="10561000" />
+      <workItem from="1521778882129" duration="16375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140625000" />
+    <option name="totallyTimeSpent" value="146439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="746" extended-state="6" />
@@ -744,12 +700,12 @@
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#2353#2354#0" expanded="false" />
-            <element signature="e#2402#2403#0" expanded="false" />
-            <element signature="e#2446#2447#0" expanded="false" />
-            <element signature="e#2485#2486#0" expanded="false" />
-            <element signature="e#2532#2533#0" expanded="false" />
-            <element signature="e#2572#2573#0" expanded="false" />
+            <element signature="e#2354#2355#0" expanded="false" />
+            <element signature="e#2403#2404#0" expanded="false" />
+            <element signature="e#2447#2448#0" expanded="false" />
+            <element signature="e#2486#2487#0" expanded="false" />
+            <element signature="e#2533#2534#0" expanded="false" />
+            <element signature="e#2573#2574#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -940,38 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2353#2354#0" expanded="false" />
-            <element signature="e#2402#2403#0" expanded="false" />
-            <element signature="e#2446#2447#0" expanded="false" />
-            <element signature="e#2485#2486#0" expanded="false" />
-            <element signature="e#2532#2533#0" expanded="false" />
-            <element signature="e#2572#2573#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/Stopword.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -993,26 +917,6 @@
         <state relative-caret-position="118">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,49 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/SentenceComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2074#2075#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-            <element signature="e#2159#2160#0" expanded="true" />
-            <element signature="e#2265#2275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/LexScoreCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1110,11 +971,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Comparator/SentenceComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/LexScoreCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="470">
+          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2285#2295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

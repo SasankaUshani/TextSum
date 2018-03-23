@@ -19,7 +19,7 @@ public class SentenceScoreCalculator {
     private List<String[]> allWordsInDocuments = null;
     private List<String> uniqueWords = null;
     private List<String> allSentences = null;
-    private ArrayList<StringBuilder> documents = null;
+    private StringBuilder documents = null;
     private SentenceExtractor sentenceExtractor;
     private double[][] cosineMaxtrics = null;
     private ArrayList<Word> words;
@@ -28,15 +28,15 @@ public class SentenceScoreCalculator {
     private final double treshhold = 0.1;
     private double[] lexScore;
 
-    public SentenceScoreCalculator(ArrayList<StringBuilder> documents) throws IOException, InterruptedException {
+    public SentenceScoreCalculator(StringBuilder documents) throws IOException, InterruptedException {
         this.documents = documents;
         sentenceExtractor = new SentenceExtractor();
         init();
     }
     private void init() throws IOException, InterruptedException {
-        for (int i = 0; i < documents.size(); i++) {
+//        for (int i = 0; i < documents.size(); i++) {
             sentenceExtractor.splitSentence(documents);
-        }
+//        }
         this.allWordsInDocuments = sentenceExtractor.getAllWordsInDescription();
         this.uniqueWords = sentenceExtractor.getUniqueWords();
         this.allSentences = sentenceExtractor.getAllSentencesAsList();

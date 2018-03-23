@@ -10,11 +10,11 @@ import java.util.*;
 public class TFIDFCalculator {
     private List<String> uniqueWords;
     private List<String[]> allWordsInDocuments;
-    private ArrayList<StringBuilder> documents;
+    private StringBuilder documents;
 
     private ArrayList<Word> words;
 
-    TFIDFCalculator(List<String> uniqueWords, List<String[]> allWordsInDocuments, ArrayList<StringBuilder> documents) {
+    TFIDFCalculator(List<String> uniqueWords, List<String[]> allWordsInDocuments, StringBuilder documents) {
         words = new ArrayList<Word>();
         this.uniqueWords = uniqueWords;
         this.allWordsInDocuments = allWordsInDocuments;
@@ -60,11 +60,12 @@ public class TFIDFCalculator {
 
     private double calculateSentenceOccarunce(String word) {
         double count = 0;
-        for (StringBuilder document : documents) {
-            if (document.toString().contains(word)) {
+//        for (StringBuilder document : documents) {
+
+            if (documents.toString().contains(word)) {
                 count++;
             }
-        }
+//        }
         return count;
     }
 

@@ -53,6 +53,7 @@ public class Api_Client {
                 }
             }
             descriptionList.add(content);
+            System.out.println(descriptionList.get(0));
         }
 
         return descriptionList;

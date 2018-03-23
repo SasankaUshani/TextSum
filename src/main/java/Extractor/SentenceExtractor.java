@@ -23,12 +23,12 @@ public class SentenceExtractor {
     List<String> stopWords = null;
     List<String> junkText = null;
 
-    public void splitSentence(ArrayList descriptions) throws IOException, InterruptedException {
+    public void splitSentence(StringBuilder descriptions) throws IOException, InterruptedException {
         junkText = new JunkWordsRemover().getJunkWords();
 
         int documentCount = 0;
-        for (int i = 0; i < descriptions.size(); i++) {
-            description = (StringBuilder) descriptions.get(i);
+//        for (int i = 0; i < descriptions.size(); i++) {
+            description = (StringBuilder) descriptions;
 
             if (description != null) {
                 Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)",
@@ -61,7 +61,7 @@ public class SentenceExtractor {
             }
             documentCount++;
         }
-    }
+//    }
 
     public List<String[]> getAllWordsInDescription() {
         return this.allWordsInDescription;
