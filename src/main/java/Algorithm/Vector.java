@@ -1,5 +1,9 @@
 package Algorithm;
 
+/**
+ * Created by SasankaKudagoda on 3/18/18.
+ */
+
 public class Vector {
     public static double dotProduct(double [] v1, double [] v2){
         double dotPrd = 0.0;

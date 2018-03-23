@@ -1,5 +1,7 @@
 package Models;
-
+/**
+ * Created by SasankaKudagoda on 3/23/18.
+ */
 public class Word {
     private String value;
     private double tf_idf_value;

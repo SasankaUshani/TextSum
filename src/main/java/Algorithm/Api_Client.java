@@ -15,7 +15,9 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
+/**
+ * Created by SasankaKudagoda on 01/18/18.
+ */
 
 public class Api_Client {
     final static String SYNONYM_API_KEY = "777f01ece8859262a3ffe3413206df51";

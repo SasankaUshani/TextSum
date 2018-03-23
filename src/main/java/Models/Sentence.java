@@ -3,7 +3,9 @@ package Models;
 
 import java.util.List;
 
-
+/**
+ * Created by SasankaKudagoda on 3/23/18.
+ */
 public class Sentence {
 
     private String sentenceValue;

@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Created by SasankaKudagoda on 3/20/18.
+ */
 public class SentenceExtractor {
     StringBuilder description;
     List<String[]> allWordsInDescription = new ArrayList<>(); //words in the document

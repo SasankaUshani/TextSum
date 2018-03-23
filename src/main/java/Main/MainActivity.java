@@ -9,7 +9,9 @@ import Algorithm.Api_Client;
 import Algorithm.SentenceScoreCalculator;
 import Models.Sentence;
 
-
+/**
+ * Created by SasankaKudagoda on 01/19/18.
+ */
 public class MainActivity {
     public static void main(String[] args) throws IOException, InterruptedException {
 
