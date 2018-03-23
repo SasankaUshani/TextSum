@@ -57,5 +57,14 @@
     <orderEntry type="library" name="Maven: com.ibm.watson.developer_cloud:tone-analyzer:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.ibm.watson.developer_cloud:tradeoff-analytics:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.ibm.watson.developer_cloud:visual-recognition:4.0.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/postgresql-42.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

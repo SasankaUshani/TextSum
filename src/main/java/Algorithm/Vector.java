@@ -18,11 +18,11 @@ public class Vector {
     }
 
     public static void printVector(double [] v){
-        System.out.print("[ ");
-        for (int i = 0; i < v.length; i++) {
-            System.out.print("" + v[i]);
-        }
-        System.out.println("]");
+//        System.out.print("[ ");
+//        for (int i = 0; i < v.length; i++) {
+//            System.out.print("" + v[i]);
+//        }
+//        System.out.println("]");
     }
 
 }

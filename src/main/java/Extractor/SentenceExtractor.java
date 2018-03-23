@@ -40,7 +40,6 @@ public class SentenceExtractor {
                             replaceAll("[\\W&&[^\\s]]", "").split("\\W+");//to get individual terms
                     allSentences.add(tokenizedTerms);
                     allSentencesAsList.add(reMatcher.group().toString());
-                    System.out.println("Re - Matcher : " + reMatcher.group());
 
                     for (String term : tokenizedTerms) {
 //                        avoid duplicate entry & stop words
@@ -57,12 +56,7 @@ public class SentenceExtractor {
             } else {
                 System.out.println("Description is null");
             }
-
             documentCount++;
-            System.out.println();
-            System.out.println("Senetence size : " + allSentences.size() + " and document count is : " + documentCount);
-            System.out.println();
-
         }
     }
 

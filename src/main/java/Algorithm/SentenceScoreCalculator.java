@@ -1,7 +1,6 @@
 package Algorithm;
 
 
-
 import Extractor.SentenceExtractor;
 import Models.Sentence;
 import Models.Word;
@@ -186,7 +185,6 @@ public class SentenceScoreCalculator {
             for (int j = 0; j < sentence2.length; j++) {
                 if (sentence1[i].trim().equalsIgnoreCase(sentence2[j].trim())) {
                     commonWords.add(sentence1[i]);
-
                 }
             }
         }
@@ -203,9 +201,6 @@ public class SentenceScoreCalculator {
                 sentenceVal += Math.pow((wordObj.getTf_value() * wordObj.getIdf_value()), 2);
             }
         }
-
-
-        System.out.println("val : " + sentenceVal);
         return sentenceVal;
     }
 }

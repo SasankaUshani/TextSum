@@ -34,6 +34,8 @@ public class CosineSimilarity {
         } else {
             return 0.0;
         }
+        System.out.println("Cosine simlarity ---- ");
+        System.out.println(cosineSimilarity);
         return cosineSimilarity;
     }
 }

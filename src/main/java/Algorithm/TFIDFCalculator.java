@@ -3,8 +3,7 @@ package Algorithm;
 import Preprocessor.StopWordsRemover;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 
 public class TFIDFCalculator {
@@ -12,6 +11,7 @@ public class TFIDFCalculator {
     ArrayList<Double[]> tdidfValuesForDocuments = new ArrayList<Double[]>();
     List<String> stopWords = null;
     List<String> uniqueWords = new ArrayList<>(); // unique words in description
+
     /**
      * @param doc  list of strings
      * @param term String represents a term
@@ -60,8 +60,11 @@ public class TFIDFCalculator {
         double tf;
         double idf;
         int count = 0;
-
+        double tfidfOfSentence = 0;
+        double tfidfOfAllSentences = 0;
+        HashMap<String[], Double> hm = new HashMap<String[], Double>();
         stopWords = new StopWordsRemover().getStopWords();
+
         for (String[] description : descriptions) {
             Double[] tdidfValuesForDocument = new Double[descriptions.size()];
             for (String word : description) {
@@ -72,31 +75,25 @@ public class TFIDFCalculator {
                     idf = calculateIdf(descriptions, word);
 
                     tdidfValuesForDocument[count] = tf * idf;
-                    System.out.println("Word : " + word + " - " + tf * idf);
 
+                    tfidfOfSentence += tf * idf;
                 } else {
 //                    System.out.println("Stop word - " + word);
                 }
             }
-                count++;
-                System.out.println("Total count is : " + count);
-                tdidfValuesForDocuments.add(tdidfValuesForDocument);
-            }
+            tfidfOfAllSentences += tfidfOfSentence;
+            hm.put(description, tfidfOfSentence);
+//            calculateSentenceImportance(String.valueOf(description), tfidfOfSentence, tfidfOfAllSentences);
 
+            tfidfOfSentence = 0;
+            count++;
+
+            tdidfValuesForDocuments.add(tdidfValuesForDocument);
+        }
 
         return tdidfValuesForDocuments;
     }
-
-    /**
-     * Method to calculate cosine similarity between all the documents.
-     */
-//    public void getCosineSimilarity() {
-//        for (int i = 0; i < tdidfValuesForDocuments.size(); i++) {
-//            for (int j = 0; j < tdidfValuesForDocuments.size(); j++) {
-//                System.out.println("between " + i + " and " + j + "  =  " +
-//                        new CosineSimilarity().cosineSimilarity(tdidfValuesForDocuments.get(i),tdidfValuesForDocuments.get(j)));
-//            }
-//        }
-//    }
-
 }
+
+
+
