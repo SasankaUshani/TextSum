@@ -1,11 +1,5 @@
-package Algorithm;
+package SummarizerAlgorithm;
 
-
-import Models.Sentence;
-import Models.Word;
-
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by SasankaKudagoda on 3/17/18.

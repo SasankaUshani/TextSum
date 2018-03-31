@@ -1,4 +1,4 @@
-package Algorithm;
+package SummarizerAlgorithm;
 
 /**
  * Created by SasankaKudagoda on 3/18/18.

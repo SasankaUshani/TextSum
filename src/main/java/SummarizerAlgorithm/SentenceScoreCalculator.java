@@ -1,4 +1,4 @@
-package Algorithm;
+package SummarizerAlgorithm;
 
 
 import Comparator.SentenceComparator;
@@ -30,9 +30,11 @@ public class SentenceScoreCalculator {
 
     public SentenceScoreCalculator(StringBuilder documents) throws IOException, InterruptedException {
         this.documents = documents;
+
         sentenceExtractor = new SentenceExtractor();
         init();
     }
+
 
     private void init() throws IOException, InterruptedException {
 //        for (int i = 0; i < documents.size(); i++) {

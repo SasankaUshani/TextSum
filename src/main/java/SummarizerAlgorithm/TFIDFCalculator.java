@@ -1,4 +1,4 @@
-package Algorithm;
+package SummarizerAlgorithm;
 
 import Models.Word;
 
