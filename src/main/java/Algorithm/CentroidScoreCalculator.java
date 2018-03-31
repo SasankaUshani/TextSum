@@ -18,7 +18,7 @@ public class CentroidScoreCalculator {
 //    private static HashMap<String, Word> words;
 //
 //
-//    public void getCentroidScoresList(List<Sentence> sentences, HashMap<String, Word> words) {
+    //    public void getCentroidScoresList(List<Sentence> sentences, HashMap<String, Word> words) {
 //        this.sentences = sentences;
 //        this.words = words;
 //        calculateTFIDFScore();

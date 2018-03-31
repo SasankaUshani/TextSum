@@ -33,9 +33,10 @@ public class SentenceScoreCalculator {
         sentenceExtractor = new SentenceExtractor();
         init();
     }
+
     private void init() throws IOException, InterruptedException {
 //        for (int i = 0; i < documents.size(); i++) {
-            sentenceExtractor.splitSentence(documents);
+        sentenceExtractor.splitSentence(documents);
 //        }
         this.allWordsInDocuments = sentenceExtractor.getAllWordsInDescription();
         this.uniqueWords = sentenceExtractor.getUniqueWords();
@@ -48,9 +49,10 @@ public class SentenceScoreCalculator {
         words = tfidfCalculator.calculateTF();
         tfidfCalculator.calculateIDF();
 
-        LexScoreCalculator lexScoreCalculator = new LexScoreCalculator(allSentences,treshhold,cosineMaxtrics, degrees,lexScore,allWordsInDocuments,words);
-       lexScore = lexScoreCalculator.calculateLexRankScore();
+        LexScoreCalculator lexScoreCalculator = new LexScoreCalculator(allSentences, treshhold, cosineMaxtrics, degrees, lexScore, allWordsInDocuments, words);
+        lexScore = lexScoreCalculator.calculateLexRankScore();
     }
+
     private double[] getLexScore() {
         return this.lexScore;
     }
@@ -68,7 +70,6 @@ public class SentenceScoreCalculator {
         Collections.sort(sentences, sentenceComparator);
         return sentences;
     }
-
 
 
 }

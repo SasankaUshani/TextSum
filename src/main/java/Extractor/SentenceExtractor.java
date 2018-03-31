@@ -25,42 +25,54 @@ public class SentenceExtractor {
 
     public void splitSentence(StringBuilder descriptions) throws IOException, InterruptedException {
         junkText = new JunkWordsRemover().getJunkWords();
+        stopWords = new StopWordsRemover().getStopWords();
 
         int documentCount = 0;
 //        for (int i = 0; i < descriptions.size(); i++) {
-            description = (StringBuilder) descriptions;
+        description = (StringBuilder) descriptions;
 
-            if (description != null) {
-                Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)",
-                        Pattern.MULTILINE | Pattern.COMMENTS);
+        if (description != null) {
+            Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)",
+                    Pattern.MULTILINE | Pattern.COMMENTS);
 
-                Matcher reMatcher = re.matcher(description);
-                //  reMatcher = re2.matcher(description);
-                stopWords = new StopWordsRemover().getStopWords();
-                while (reMatcher.find()) {
+            Matcher reMatcher = re.matcher(description);
+            //  reMatcher = re2.matcher(description);
 
-                    String[] tokenizedTerms = reMatcher.group().
-                            replaceAll("[\\W&&[^\\s]]", "").split("\\W+");//to get individual terms
-                    allSentences.add(tokenizedTerms);
-                    allSentencesAsList.add(reMatcher.group().toString());
+            while (reMatcher.find()) {
 
-                    for (String term : tokenizedTerms) {
+                String[] tokenizedTerms = reMatcher.group().
+                        replaceAll("[\\W&&[^\\s]]", "").split("\\W+");//to get individual terms
+                String sentence = reMatcher.group().toString();
+              //  for (String junkSentence:junkText) {
+//                    if (junkSentence.contains(sentence.toLowerCase())) {
+                   //     System.out.print("*****************Conatin ");
+                     //   System.out.println(junkSentence);
+//                    }
+             //   }
+//                System.out.print("rematcher ");
+//                System.out.println(reMatcher.group().toString());
+
+                allSentences.add(tokenizedTerms);
+                allSentencesAsList.add(sentence);
+
+                for (String term : tokenizedTerms) {
 //                        avoid duplicate entry & stop words
-                        if (!uniqueWords.contains(term) && !stopWords.contains(term.toLowerCase())) {
-                            uniqueWords.add(term);
+                    if (!uniqueWords.contains(term) && !stopWords.contains(term.toLowerCase())) {
+                        uniqueWords.add(term);
 
-                        }
+
                     }
-                    allWordsInDescription.add(tokenizedTerms);
-
-
                 }
+                allWordsInDescription.add(tokenizedTerms);
 
-            } else {
-                System.out.println("Description is null");
+
             }
-            documentCount++;
+
+        } else {
+            System.out.println("Description is null");
         }
+        documentCount++;
+    }
 //    }
 
     public List<String[]> getAllWordsInDescription() {
