@@ -3,18 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="be60ee78-f8d9-41dc-81f8-0bc2bc39731c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/Api_Client.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/Api_Client.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/CentroidScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/CentroidScoreCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/CosineSimilarity.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/CosineSimilarity.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/LexScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/LexScoreCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/SentenceScoreCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/SentenceScoreCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/TFIDFCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/TFIDFCalculator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm/Vector.java" afterPath="$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/Vector.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" />
+      <change beforePath="$PROJECT_DIR$/News" afterPath="$PROJECT_DIR$/News" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/SentenceScoreCalculator.class" afterPath="$PROJECT_DIR$/target/classes/Algorithm/SentenceScoreCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extractor/SentenceExtractor.class" afterPath="$PROJECT_DIR$/target/classes/Extractor/SentenceExtractor.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java" afterPath="$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TextFiles/Sports.txt" afterPath="$PROJECT_DIR$/src/main/java/TextFiles/Topics.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java" afterPath="$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/Api_Client.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/CentroidScoreCalculator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/CosineSimilarity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/LexScoreCalculator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/SentenceScoreCalculator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/TFIDFCalculator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm/Vector.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/MainActivity.class" afterPath="$PROJECT_DIR$/target/classes/Main/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocessor/TrendingTopics.class" afterPath="$PROJECT_DIR$/target/classes/Preprocessor/TrendingTopics.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TrendingNews/TrendingNewsObserver.class" afterPath="$PROJECT_DIR$/target/classes/TrendingNews/TrendingNewsObserver.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +33,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="44" column="76" lean-forward="true" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
+            <state relative-caret-position="315">
+              <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,80 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sports.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/Sports.txt">
+      <file leaf-file-name="Api_Client.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/Api_Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="171">
+              <caret line="67" column="87" lean-forward="false" selection-start-line="67" selection-start-column="87" selection-end-line="67" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SentenceScoreCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/SentenceScoreCalculator.java">
+      <file leaf-file-name="Sentence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceComparator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Comparator/SentenceComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StopWordsRemover.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding>
-                <element signature="e#2381#2382#0" expanded="true" />
-                <element signature="e#2430#2431#0" expanded="true" />
-                <element signature="e#2474#2475#0" expanded="true" />
-                <element signature="e#2513#2514#0" expanded="true" />
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2610#2611#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrendingNewsObserver.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -128,11 +72,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Topics.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/Topics.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TrendingTopics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrendingNewsObserver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,11 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calculateSenetenceScore</find>
-      <find>SenetenceScore</find>
-      <find>new sentence</find>
-      <find>lexScore</find>
-      <find>lexscore</find>
       <find>compute</find>
       <find>getSentenceValue</find>
       <find>syst</find>
@@ -177,10 +136,14 @@
       <find>SentenceExtractor</find>
       <find>hashm</find>
       <find>wordOccurence</find>
-      <find>cricket</find>
-      <find>olympic</find>
-      <find>football</find>
       <find>footba</find>
+      <find>olympic</find>
+      <find>trendingto</find>
+      <find>trumph</find>
+      <find>olympic</find>
+      <find>cricket</find>
+      <find>football</find>
+      <find>football</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -197,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/GetNews.java" />
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoreNlp.java" />
         <option value="$PROJECT_DIR$/src/main/java/StopWords.java" />
@@ -246,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Preprocessor/WordOccurenceCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TextFiles/Topics.txt" />
         <option value="$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main/MainActivity.java" />
       </list>
@@ -287,6 +250,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,23 +285,43 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextSum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextSum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TextFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TextSum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="TrendingNews" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -584,12 +571,15 @@
       <workItem from="1521778882129" duration="19290000" />
       <workItem from="1521864760183" duration="7984000" />
       <workItem from="1522391148120" duration="823000" />
-      <workItem from="1522419044323" duration="13642000" />
+      <workItem from="1522419044323" duration="17463000" />
+      <workItem from="1522998924912" duration="2008000" />
+      <workItem from="1523166109345" duration="1428000" />
+      <workItem from="1523197301697" duration="317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171803000" />
+    <option name="totallyTimeSpent" value="179377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="747" extended-state="0" />
@@ -597,20 +587,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4202454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4202454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38803682" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19063005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30804953" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -621,7 +609,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30674848" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +622,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="106" />
+      <option name="time" value="108" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -648,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,13 +726,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/CoreNlp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/Word.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -771,9 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,90 +779,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1521873159000" expanded="true" signature="939:1149" ph="CREATE TABLE... COMPANY" />
-            <marker date="1521873159000" expanded="true" signature="1602:1649" ph="INSERT INTO NEWS... " />
-            <marker date="1521873159000" expanded="true" signature="1602:1692" ph="INSERT INTO NEWS... " />
-            <marker date="1521873159000" expanded="true" signature="1602:1694" ph="INSERT INTO SUMMERIZEDNEWS... " />
-            <marker date="1521873159000" expanded="true" signature="1602:1719" ph="INSERT INTO COMPANY... " />
-            <marker date="1521873159000" expanded="true" signature="1674:1692" ph="VALUES (1, '... " />
-            <marker date="1521873159000" expanded="true" signature="2339:2353" ph="SELECT * FRO... COMPANY" />
-            <marker date="1521873159000" expanded="true" signature="2339:2377" ph="SELECT * FRO... SUMMERIZEDNEWS" />
-            <marker date="1521873159000" expanded="true" signature="2339:2386" ph="SELECT * FRO... SUMMERIZEDNEWS" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/Api_Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/001.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/002.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/003.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/197.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/200.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/198.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/199.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/001.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/002.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/003.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/197.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/200.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/198.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/199.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/JunkText.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4731">
           <caret line="570" column="3" lean-forward="false" selection-start-line="570" selection-start-column="0" selection-end-line="570" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,17 +807,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="2668" column="18" lean-forward="false" selection-start-line="2668" selection-start-column="18" selection-end-line="2668" selection-end-column="18" />
-          <folding>
-            <element signature="e#104675#104676#0" expanded="false" />
-            <element signature="e#104730#104731#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/Sports.txt">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="117">
+          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Comparator/SentenceComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/SentenceScoreCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -927,49 +869,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TextFiles/Topics.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/SentenceExtractor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2513#2514#0" expanded="true" />
-            <element signature="e#2564#2565#0" expanded="true" />
-            <element signature="e#2610#2611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/StopWordsRemover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/SentenceScoreCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Preprocessor/TrendingTopics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="420">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -978,29 +889,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="44" column="76" lean-forward="true" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
+        <state relative-caret-position="315">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Comparator/SentenceComparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SummarizerAlgorithm/Api_Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="171">
+          <caret line="67" column="87" lean-forward="false" selection-start-line="67" selection-start-column="87" selection-end-line="67" selection-end-column="87" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TrendingNews/TrendingNewsObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
